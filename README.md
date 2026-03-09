@@ -13,7 +13,6 @@ BMI < 18.5 - niedowaga
 18.5 <= BMI < 25 - waga prawidłowa
 25 <= BMI < 30 - nadwaga
 BMI >= 30 - otyłość
-
 Uruchomienie programu:
 
 python zadanie1/bmi.py
