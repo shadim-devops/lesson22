@@ -1,12 +1,15 @@
-print("Tablica mnożenia")
+waga = float(input("Podaj wagę w kg: "))
+wzrost = float(input("Podaj wzrost w cm: "))
 
-print("   ", end="")
-for i in range(1, 11):
-    print(f"{i:4}", end="")
-print()
+bmi = waga / (wzrost / 100) ** 2
 
-for i in range(1, 11):
-    print(f"{i:3}", end="")
-    for j in range(1, 11):
-        print(f"{i*j:4}", end="")
-    print()
+print(f"Twoje BMI wynosi: {bmi:.2f}")
+
+if bmi < 18.5:
+    print("Niedowaga")
+elif 18.5 <= bmi < 25:
+    print("Waga prawidłowa")
+elif 25 <= bmi < 30:
+    print("Nadwaga")
+else:
+    print("Otyłość")
